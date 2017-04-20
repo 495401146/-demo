@@ -1,0 +1,47 @@
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent" >
+
+
+    <SurfaceView
+        android:layout_width="1px"
+        android:layout_height="1px"
+        android:id="@+id/surfaceView"
+        />
+    <RelativeLayout
+        android:id="@+id/layout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        >
+        <com.ant.liao.GifView android:id="@+id/gif1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:enabled="false" />
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="17dp"
+            android:text="录像"
+            android:onClick="startVoide"
+            android:enabled="true"
+            />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="14dp"
+            android:layout_toLeftOf="@+id/start"
+            android:text="停止"
+            android:onClick="startVoide"
+            android:enabled="false"
+            />
+
+    </RelativeLayout>
+
+</FrameLayout>
